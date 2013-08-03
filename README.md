@@ -1,3 +1,6 @@
+# QFlex
+A modification of hdni's Flex. Very small motification has been done.
+
 # Flex
 A GNOME 3.8 theme for GNOME Shell, GTK 3, Mutter, and Firefox. [See the preview](http://hdni.github.io/rice/assets/flex_preview.png).
 

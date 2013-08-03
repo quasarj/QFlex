@@ -2316,6 +2316,15 @@ style "null"
  	}
 }
 
+# This is to fix an issue with a single-pixel line at the bottom
+# of gvim, even when the scrollbar is off.
+# This color is manually set to the same as my gvim colorscheme.
+style "gvim_style" {
+         # change the "#RGB"/"#RRGGBB" style color here:
+         # using pure red for testing
+         bg[NORMAL] = "#2E3436"
+}
+
 
 class "GtkWidget"			style "default"
 class "GtkScrollbar"       		style "scrollbar"
@@ -2392,3 +2401,5 @@ widget "*openoffice-toplevel*GtkEntry"        style "libreoffice_entry"
 widget "*openoffice-toplevel*GtkSpinButton"   style "libreoffice_entry"
 widget "*libreoffice-toplevel*GtkEntry"       style "libreoffice_entry"
 widget "*libreoffice-toplevel*GtkSpinButton"  style "libreoffice_entry"
+
+widget "vim-main-window.*.GtkForm" style "gvim_style"
